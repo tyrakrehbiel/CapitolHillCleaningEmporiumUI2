@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import { Box, Link, Typography } from '@mui/material';
 
-interface Props {
+interface BannerLinkProps {
     href: string;
     icon: ReactNode;
     label: string;
@@ -10,7 +10,7 @@ interface Props {
 /**
  * Custom Link component for navigation banner
  */
-const BannerLink = (props: Props) => {
+export const BannerLink = (props: BannerLinkProps) => {
 
     const { href, icon, label } = props;
 
@@ -42,5 +42,3 @@ const BannerLink = (props: Props) => {
         </Box>
     );
 };
-
-export default BannerLink;

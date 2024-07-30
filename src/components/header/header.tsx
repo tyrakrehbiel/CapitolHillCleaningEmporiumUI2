@@ -4,16 +4,15 @@ import { AppBar, Box, IconButton, Link, Tab, Tabs } from '@mui/material';
 import { useLocation } from 'react-router-dom';
 
 import { useMobile } from '../../hooks';
-import Logo from '../logo/logo';
-
-import Banner from './banner/banner';
-import Drawer from './drawer/drawer';
+import { Logo } from '../logo/logo';
+import { Banner} from './banner/banner';
+import { Drawer } from './drawer/drawer';
 import { navigationContent } from '../../content';
 
 /**
  * Application header including logo, navigation, and secondary actions
  */
-const Header = () => {
+export const Header = () => {
 
     const isMobile = useMobile();
     const { hash } = useLocation();
@@ -39,7 +38,7 @@ const Header = () => {
 
     return (
         <>
-            <AppBar elevation={0} position='sticky'>
+            <AppBar elevation={0} position='fixed'>
                 <Banner />
                 <Box sx={{
                     backgroundColor: 'white',
@@ -97,5 +96,3 @@ const Header = () => {
         </>
     );
 };
-
-export default Header;

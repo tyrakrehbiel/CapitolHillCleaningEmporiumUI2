@@ -1,20 +1,17 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Link, Typography } from '@mui/material';
 import { DryCleaning as LogoIcon } from '@mui/icons-material';
+import { companyInfo } from '../../content';
 
-// import pkg from '../../../package.json';
-
-// const appName = pkg.description;
-const appName = 'Capitol Hill Cleaning Emporium';
 
 /**
  * Styled company logo for header component
  */
-const Logo = () => {
+export const Logo = () => {
 
     return (
         <Box
-            // component={Link}
-            // href='#header'
+            component={Link}
+            href=''
             sx={({ palette }) => ({
                 display: 'flex',
                 gap: 1,
@@ -25,10 +22,8 @@ const Logo = () => {
         >
             <LogoIcon fontSize='large' />
             <Typography fontSize='large' fontWeight={600}>
-                {appName}
+                {companyInfo.name}
             </Typography>
         </Box>
     );
 };
-
-export default Logo;

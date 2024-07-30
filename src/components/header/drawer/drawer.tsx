@@ -2,7 +2,7 @@ import { Close as CloseIcon } from '@mui/icons-material';
 import { Button, Divider, Link, Drawer as MuiDrawer, Tab, Tabs } from '@mui/material';
 import { navigationContent } from '../../../content';
 
-interface Props {
+interface DrawerProps {
     open: boolean;
     onClose: () => void;
     activePath: string | false;
@@ -11,7 +11,7 @@ interface Props {
 /**
  * Drawer navigation component
  */
-const Drawer = (props: Props) => {
+export const Drawer = (props: DrawerProps) => {
 
     const {
         open,
@@ -55,5 +55,3 @@ const Drawer = (props: Props) => {
         </MuiDrawer>
     );
 };
-
-export default Drawer;

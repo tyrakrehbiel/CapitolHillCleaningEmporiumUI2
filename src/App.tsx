@@ -1,3 +1,9 @@
+
+import { Box, ThemeProvider } from '@mui/material';
+
+import { theme } from './styles/theme';
+import { Header } from './components/header/header';
+import { Footer } from './components/footer/footer';
 // import { Navigation } from './components/navigation';
 // import { Hero } from './components/hero';
 // import { Features } from './components/features';
@@ -8,19 +14,10 @@
 // import { Team } from './components/team';
 // import { Contact } from './components/contact';
 // import * as content from './content';
-import SmoothScroll from 'smooth-scroll';
-import './App.css';
-import { ThemeProvider } from '@emotion/react';
-import theme from './styles/theme';
-import Header from './components/header/header';
-import Footer from './components/footer/footer';
-import { Box } from '@mui/material';
 
-export const scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 1000,
-    speedAsDuration: true,
-});
 
+// todo: add padding to the top of app content dynamically based on navigation height
+// todo: uncommeent sections
 const App = () => {
 
     return (
