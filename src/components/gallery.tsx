@@ -1,11 +1,6 @@
+import { GalleryData } from '../@types';
 import { Image } from '../components/image';
 import { FC } from 'react';
-
-export type GalleryData =  {
-  title: string;
-  largeImage: string;
-  smallImage: string;
-}[];
 
 export interface GalleryProps {
   data?: GalleryData;
@@ -21,8 +16,8 @@ export const Gallery: FC<GalleryProps> = (props) => {
                 <div className="section-title">
                     <h2>Gallery</h2>
                     <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
+                        dapibus leonec.
                     </p>
                 </div>
                 <div className="row">

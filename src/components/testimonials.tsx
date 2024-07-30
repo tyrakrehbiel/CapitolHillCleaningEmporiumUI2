@@ -1,15 +1,9 @@
 import { FC } from 'react';
-
-export type TestimonialsData = {
-  img: string;
-  name: string;
-  text: string;
-}[];
+import { TestimonialsData } from '../@types';
 
 export interface TestimonialsProps {
-  data?: TestimonialsData;
+    data?: TestimonialsData;
 }
-
 
 export const Testimonials: FC<TestimonialsProps> = (props) => {
 

@@ -1,13 +1,8 @@
 import { FC } from 'react';
-
-export type ServicesData = {
-  icon: string;
-  name: string;
-  text: string;
-}[];
+import { ServicesData } from '../@types';
 
 export interface ServicesProps {
-  data?: ServicesData;
+    data?: ServicesData;
 }
 
 export const Services: FC<ServicesProps> = (props) => {
@@ -20,8 +15,8 @@ export const Services: FC<ServicesProps> = (props) => {
                 <div className="section-title">
                     <h2>Our Services</h2>
                     <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
+                        dapibus leonec.
                     </p>
                 </div>
                 <div className="row">

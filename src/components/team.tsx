@@ -1,10 +1,5 @@
 import { FC } from 'react';
-
-export type TeamData = {
-  img: string;
-  name: string;
-  job: string;
-}[];
+import { TeamData } from '../@types';
 
 export interface TeamProps {
   data?: TeamData;
@@ -20,8 +15,8 @@ export const Team: FC<TeamProps> = (props) => {
                 <div className="col-md-8 col-md-offset-2 section-title">
                     <h2>Meet the Team</h2>
                     <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
+                        dapibus leonec.
                     </p>
                 </div>
                 <div id="row">

@@ -1,9 +1,5 @@
 import { FC } from 'react';
-
-export interface HeroData {
-  title: string;
-  paragraph: string;
-}
+import { HeroData } from '../@types';
 
 export interface HeroProps {
   data?: HeroData
@@ -31,7 +27,7 @@ export const Hero: FC<HeroProps> = (props) => {
                                     href="#features"
                                     className="btn btn-custom btn-lg page-scroll"
                                 >
-                  Learn More
+                                    Learn More
                                 </a>{' '}
                             </div>
                         </div>

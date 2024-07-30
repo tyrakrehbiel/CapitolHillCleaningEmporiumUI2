@@ -1,4 +1,5 @@
 import { ChangeEvent, FC, FormEvent, useState } from 'react';
+import { ContactData } from '../@types';
 // import emailjs from "emailjs-com";
 
 const initialState = {
@@ -6,15 +7,6 @@ const initialState = {
     email: '',
     message: '',
 };
-
-export interface ContactData {
-  address: string;
-  phone: string;
-  email: string;
-  facebook: string;
-  twitter: string;
-  youtube: string;
-}
 
 export interface ContactProps {
   data?: ContactData;
@@ -69,8 +61,8 @@ export const Contact: FC<ContactProps> = (props) => {
                             <div className="section-title">
                                 <h2>Get In Touch</h2>
                                 <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
+                                    Please fill out the form below to send us an email and we will
+                                    get back to you as soon as possible.
                                 </p>
                             </div>
                             <form name="sentMessage" onSubmit={handleSubmit}>
@@ -118,7 +110,7 @@ export const Contact: FC<ContactProps> = (props) => {
                                 </div>
                                 <div id="success"></div>
                                 <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
+                                    Send Message
                                 </button>
                             </form>
                         </div>
@@ -178,9 +170,9 @@ export const Contact: FC<ContactProps> = (props) => {
             <div id="footer">
                 <div className="container text-center">
                     <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{' '}
+                        &copy; 2023 Issaaf Kattan React Land Page Template. Design by{' '}
                         <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
+                        TemplateWire
                         </a>
                     </p>
                 </div>

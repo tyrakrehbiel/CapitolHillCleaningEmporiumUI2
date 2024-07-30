@@ -1,10 +1,5 @@
 import { FC } from 'react';
-
-export type FeaturesData = {
-  icon: string;
-  title: string;
-  text: string;
-}[];
+import { FeaturesData } from '../@types';
 
 export interface FeaturesProps {
   data?: FeaturesData;

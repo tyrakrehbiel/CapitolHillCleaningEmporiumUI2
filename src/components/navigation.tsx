@@ -1,15 +1,8 @@
 import { FC } from 'react';
-
-export interface NavigationData {
-  logo: string;
-  links: {
-    href: string;
-    label: string;
-  }[];
-}
+import { NavigationData } from '../@types';
 
 export interface NavigationProps {
-  data?: NavigationData;
+    data?: NavigationData;
 }
 
 const initialData: NavigationData = {

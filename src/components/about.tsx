@@ -1,10 +1,5 @@
 import { FC } from 'react';
-
-export interface AboutData {
-  Why: string[];
-  Why2: string[];
-  paragraph: string;
-}
+import { AboutData } from '../@types';
 
 export interface AboutProps {
   data?: AboutData;
