@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { AboutData } from '../@types';
 
 export interface AboutProps {
-  data?: AboutData;
+    data?: AboutData;
 }
 
 const initialData: AboutData = {

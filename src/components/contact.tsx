@@ -9,7 +9,7 @@ const initialState = {
 };
 
 export interface ContactProps {
-  data?: ContactData;
+    data?: ContactData;
 }
 
 const initialData: ContactData = {

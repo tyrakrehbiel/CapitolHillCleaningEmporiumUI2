@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { TeamData } from '../@types';
 
 export interface TeamProps {
-  data?: TeamData;
+    data?: TeamData;
 }
 
 export const Team: FC<TeamProps> = (props) => {

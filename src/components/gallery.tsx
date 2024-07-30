@@ -3,7 +3,7 @@ import { Image } from '../components/image';
 import { FC } from 'react';
 
 export interface GalleryProps {
-  data?: GalleryData;
+    data?: GalleryData;
 }
 
 export const Gallery: FC<GalleryProps> = (props) => {

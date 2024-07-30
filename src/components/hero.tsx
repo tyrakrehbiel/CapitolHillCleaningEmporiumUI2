@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { HeroData } from '../@types';
 
 export interface HeroProps {
-  data?: HeroData
+    data?: HeroData
 }
 
 const initialData: HeroData = { title: 'Loading', paragraph: 'Loading' };

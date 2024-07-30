@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { FeaturesData } from '../@types';
 
 export interface FeaturesProps {
-  data?: FeaturesData;
+    data?: FeaturesData;
 }
 
 export const Features: FC<FeaturesProps> = (props) => {

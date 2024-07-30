@@ -1,9 +1,9 @@
 import { FC } from 'react';
 
 export interface ImageProps {
-  title: string;
-  largeImage: string;
-  smallImage: string;
+    title: string;
+    largeImage: string;
+    smallImage: string;
 }
 
 export const Image: FC<ImageProps> = (props) => {
