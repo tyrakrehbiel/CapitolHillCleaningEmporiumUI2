@@ -7,7 +7,7 @@ import { Gallery } from './components/gallery';
 import { Testimonials } from './components/testimonials';
 import { Team } from './components/team';
 import { Contact } from './components/contact';
-import appContent from './content/content.json';
+import * as content from './content';
 import SmoothScroll from 'smooth-scroll';
 import './App.css';
 
@@ -21,14 +21,14 @@ const App = () => {
     return (
         <div>
             <Navigation />
-            <Hero data={appContent.Header} />
-            <Features data={appContent.Features} />
-            <About data={appContent.About} />
-            <Services data={appContent.Services} />
-            <Gallery data={appContent.Gallery} />
-            <Testimonials data={appContent.Testimonials} />
-            <Team data={appContent.Team} />
-            <Contact data={appContent.Contact} />
+            <Hero data={content.hero} />
+            <Features data={content.features} />
+            <About data={content.about} />
+            <Services data={content.services} />
+            <Gallery data={content.gallery} />
+            <Testimonials data={content.testimonials} />
+            <Team data={content.team} />
+            <Contact data={content.contact} />
         </div>
     );
 };
