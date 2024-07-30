@@ -1,4 +1,4 @@
-import { AboutData, ContactData, FeaturesData, GalleryData, HeroData, ServicesData, TeamData, TestimonialsData } from '../@types';
+import { AboutData, CompanyInfo, ContactData, FeaturesData, GalleryData, HeroData, NavigationData, ServicesData, TeamData, TestimonialsData } from '../@types';
 
 export const hero: HeroData = {
     'title': 'We are a Landing Page',
@@ -189,3 +189,29 @@ export const features: FeaturesData = [
         'text': 'Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.'
     }
 ];
+
+export const companyInfo: CompanyInfo = {
+    name: 'Capitol Hill Cleaning Emporium',
+    phone: '000-111-2222',
+    email: 'chce@email.com',
+    location: {
+        street: '100 Main st',
+        city: 'Washington',
+        state: 'D.C.',
+        zip: '00000'
+    },
+    socials: []
+};
+
+export const navigationContent: NavigationData = {
+    logo: 'React Landing Page',
+    links: [
+        { href: '#features', label: 'Features' },
+        { href: '#about', label: 'About' },
+        { href: '#services', label: 'Services' },
+        { href: '#portfolio', label: 'Portfolio' },
+        { href: '#testimonials', label: 'Testimonials' },
+        { href: '#team', label: 'Team' },
+        { href: '#contact', label: 'contact' },
+    ]
+};

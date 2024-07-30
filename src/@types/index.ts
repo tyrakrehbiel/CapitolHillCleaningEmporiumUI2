@@ -55,3 +55,19 @@ export type TestimonialsData = {
     name: string;
     text: string;
 }[];
+
+export interface CompanyInfo {
+    name: string,
+    phone: string;
+    email: string;
+    location: {
+        street: string;
+        city: string;
+        state: string;
+        zip: string;
+    };
+    socials: {
+        name: string;
+        icon: string;
+    }[];
+}
