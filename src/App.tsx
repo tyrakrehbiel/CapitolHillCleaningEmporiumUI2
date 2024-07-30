@@ -13,6 +13,8 @@ import './App.css';
 import { ThemeProvider } from '@emotion/react';
 import theme from './styles/theme';
 import Header from './components/header/header';
+import Footer from './components/footer/footer';
+import { Box } from '@mui/material';
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
     speed: 1000,
@@ -23,16 +25,19 @@ const App = () => {
 
     return (
         <ThemeProvider theme={theme}>
-            {/* <Navigation /> */}
             <Header />
-            {/* <Hero data={content.hero} />
-            <Features data={content.features} />
-            <About data={content.about} />
-            <Services data={content.services} />
-            <Gallery data={content.gallery} />
-            <Testimonials data={content.testimonials} />
-            <Team data={content.team} />
-            <Contact data={content.contact} /> */}
+            <Box sx={{ minHeight: '100vh' }}>
+                Content
+                {/* <Hero data={content.hero} />
+                <Features data={content.features} />
+                <About data={content.about} />
+                <Services data={content.services} />
+                <Gallery data={content.gallery} />
+                <Testimonials data={content.testimonials} />
+                <Team data={content.team} />
+                <Contact data={content.contact} /> */}
+            </Box>
+            <Footer />
         </ThemeProvider>
     );
 };
